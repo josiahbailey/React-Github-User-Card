@@ -1,9 +1,13 @@
 import React from 'react';
+import Card from './Card'
 
-const CardList = () => {
+const CardList = ({myData, followData}) => {
     return (  
         <div>
-            Card List
+            <Card data={myData}/>
+            {followData.map(follower => (
+                <Card data={follower} />
+            ))}
         </div>
     );
 }
