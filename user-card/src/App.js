@@ -13,7 +13,7 @@ class App extends React.Component {
   render() {
     return (
       <div>
-        <CardList myData={myData} followData={followData} />
+        <CardList /*myData={myData} followData={followData}*/ />
       </div>
     )
   }
