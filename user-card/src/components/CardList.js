@@ -6,7 +6,7 @@ const CardList = ({myData, followData}) => {
         <div>
             <Card data={myData}/>
             {followData.map(follower => (
-                <Card data={follower} />
+                <Card key={follower.id} data={follower} />
             ))}
         </div>
     );

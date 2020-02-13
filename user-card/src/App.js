@@ -8,7 +8,8 @@ class App extends React.Component {
     super()
     this.state = {
       myData: {},
-      followData: []
+      followData: [],
+      followerSubData: []
     }
   }
   componentDidMount(){
@@ -32,10 +33,20 @@ class App extends React.Component {
     .catch(err => {
       console.log("Call 2 ERROR", err)
     })
+    setTimeout(() => {
+      this.state.followData.map(follower => {
+        axios.get(follower.url)
+        .then(res => {
+          const newArr = [...this.state.followData]
+          newArr.push(follower)
+          this.setState()
+        })
+      })
+    }, 1000)
   }
   render() {
     return (
-      <div>
+      <div className='App'>
         <CardList myData={this.state.myData} followData={this.state.followData} />
       </div>
     )
