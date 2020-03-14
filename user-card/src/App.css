@@ -1,0 +1,50 @@
+.App {
+  text-align: center;
+  width: 100%;
+  height: 100vh;
+  margin: 0 auto;
+  max-width: 1000px;
+}
+
+/* Card Styles */
+.card {
+  background-color: black;
+  color: black;
+  width: 50%;
+  margin: 0 auto;
+  margin-top: 5%;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  box-shadow: 8px 5px 5px dodgerblue;
+  text-align: center;
+  background-image: url('./components/img/Background.png');
+  background-position: center;
+  background-size: cover;
+}
+
+.cardImg {
+  padding-top: 5%;
+  width: 50%;
+}
+
+.cardSubImg {
+  background-color: none;
+  width: 15%;
+  padding-right: 5%;
+}
+
+.cardButton {
+  text-align: center;
+  width: 20%;
+  height: 3vh;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 15px;
+  padding: .2% 0;
+  font-size: 1.1rem;
+}
+
+
+
+
